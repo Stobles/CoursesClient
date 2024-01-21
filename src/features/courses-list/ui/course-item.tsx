@@ -30,7 +30,11 @@ export function CourseItem({
         <CardDescription>{course.description}</CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button disabled={isLoadingDelete} onClick={handleDelete}>
+        <Button
+          className="mt-4"
+          disabled={isLoadingDelete}
+          onClick={handleDelete}
+        >
           Удалить
         </Button>
       </CardFooter>
